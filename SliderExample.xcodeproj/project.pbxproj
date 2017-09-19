@@ -34,17 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7EB6FDBA1D51D3BB0099F563 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB6FDBA1D51D3BB0099F563 /* SliderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB6FDBD1D51D3BB0099F563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EB6FDBF1D51D3BB0099F563 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EB6FDC21D51D3BB0099F563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EB6FDC41D51D3BB0099F563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EB6FDC71D51D3BB0099F563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EB6FDC91D51D3BB0099F563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EB6FDCE1D51D3BB0099F563 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB6FDCE1D51D3BB0099F563 /* SliderExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SliderExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB6FDD21D51D3BB0099F563 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		7EB6FDD41D51D3BB0099F563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EB6FDD91D51D3BB0099F563 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB6FDD91D51D3BB0099F563 /* SliderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SliderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB6FDDD1D51D3BB0099F563 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		7EB6FDDF1D51D3BB0099F563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,9 +87,9 @@
 		7EB6FDBB1D51D3BB0099F563 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7EB6FDBA1D51D3BB0099F563 /* Example.app */,
-				7EB6FDCE1D51D3BB0099F563 /* ExampleTests.xctest */,
-				7EB6FDD91D51D3BB0099F563 /* ExampleUITests.xctest */,
+				7EB6FDBA1D51D3BB0099F563 /* SliderExample.app */,
+				7EB6FDCE1D51D3BB0099F563 /* SliderExampleTests.xctest */,
+				7EB6FDD91D51D3BB0099F563 /* SliderExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,8 +97,8 @@
 		7EB6FDBC1D51D3BB0099F563 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				7ECEB76E1D531F530004CDC9 /* Slider */,
 				7EB6FDBD1D51D3BB0099F563 /* AppDelegate.swift */,
-				7EB6FDBF1D51D3BB0099F563 /* ViewController.swift */,
 				7EB6FDC11D51D3BB0099F563 /* Main.storyboard */,
 				7EB6FDC41D51D3BB0099F563 /* Assets.xcassets */,
 				7EB6FDC61D51D3BB0099F563 /* LaunchScreen.storyboard */,
@@ -125,12 +125,20 @@
 			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
+		7ECEB76E1D531F530004CDC9 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				7EB6FDBF1D51D3BB0099F563 /* ViewController.swift */,
+			);
+			name = Slider;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7EB6FDB91D51D3BB0099F563 /* Example */ = {
+		7EB6FDB91D51D3BB0099F563 /* SliderExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EB6FDE21D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildConfigurationList = 7EB6FDE21D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "SliderExample" */;
 			buildPhases = (
 				7EB6FDB61D51D3BB0099F563 /* Sources */,
 				7EB6FDB71D51D3BB0099F563 /* Frameworks */,
@@ -140,14 +148,14 @@
 			);
 			dependencies = (
 			);
-			name = Example;
+			name = SliderExample;
 			productName = Example;
-			productReference = 7EB6FDBA1D51D3BB0099F563 /* Example.app */;
+			productReference = 7EB6FDBA1D51D3BB0099F563 /* SliderExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7EB6FDCD1D51D3BB0099F563 /* ExampleTests */ = {
+		7EB6FDCD1D51D3BB0099F563 /* SliderExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EB6FDE51D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "ExampleTests" */;
+			buildConfigurationList = 7EB6FDE51D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "SliderExampleTests" */;
 			buildPhases = (
 				7EB6FDCA1D51D3BB0099F563 /* Sources */,
 				7EB6FDCB1D51D3BB0099F563 /* Frameworks */,
@@ -158,14 +166,14 @@
 			dependencies = (
 				7EB6FDD01D51D3BB0099F563 /* PBXTargetDependency */,
 			);
-			name = ExampleTests;
+			name = SliderExampleTests;
 			productName = ExampleTests;
-			productReference = 7EB6FDCE1D51D3BB0099F563 /* ExampleTests.xctest */;
+			productReference = 7EB6FDCE1D51D3BB0099F563 /* SliderExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7EB6FDD81D51D3BB0099F563 /* ExampleUITests */ = {
+		7EB6FDD81D51D3BB0099F563 /* SliderExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EB6FDE81D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "ExampleUITests" */;
+			buildConfigurationList = 7EB6FDE81D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "SliderExampleUITests" */;
 			buildPhases = (
 				7EB6FDD51D51D3BB0099F563 /* Sources */,
 				7EB6FDD61D51D3BB0099F563 /* Frameworks */,
@@ -176,9 +184,9 @@
 			dependencies = (
 				7EB6FDDB1D51D3BB0099F563 /* PBXTargetDependency */,
 			);
-			name = ExampleUITests;
+			name = SliderExampleUITests;
 			productName = ExampleUITests;
-			productReference = 7EB6FDD91D51D3BB0099F563 /* ExampleUITests.xctest */;
+			productReference = 7EB6FDD91D51D3BB0099F563 /* SliderExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -188,23 +196,27 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Crystal;
 				TargetAttributes = {
 					7EB6FDB91D51D3BB0099F563 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = B876WVK3K2;
+						LastSwiftMigration = 0830;
 					};
 					7EB6FDCD1D51D3BB0099F563 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 7EB6FDB91D51D3BB0099F563;
 					};
 					7EB6FDD81D51D3BB0099F563 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 7EB6FDB91D51D3BB0099F563;
 					};
 				};
 			};
-			buildConfigurationList = 7EB6FDB51D51D3BB0099F563 /* Build configuration list for PBXProject "Example" */;
+			buildConfigurationList = 7EB6FDB51D51D3BB0099F563 /* Build configuration list for PBXProject "SliderExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,9 +229,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7EB6FDB91D51D3BB0099F563 /* Example */,
-				7EB6FDCD1D51D3BB0099F563 /* ExampleTests */,
-				7EB6FDD81D51D3BB0099F563 /* ExampleUITests */,
+				7EB6FDB91D51D3BB0099F563 /* SliderExample */,
+				7EB6FDCD1D51D3BB0099F563 /* SliderExampleTests */,
+				7EB6FDD81D51D3BB0099F563 /* SliderExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -282,12 +294,12 @@
 /* Begin PBXTargetDependency section */
 		7EB6FDD01D51D3BB0099F563 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7EB6FDB91D51D3BB0099F563 /* Example */;
+			target = 7EB6FDB91D51D3BB0099F563 /* SliderExample */;
 			targetProxy = 7EB6FDCF1D51D3BB0099F563 /* PBXContainerItemProxy */;
 		};
 		7EB6FDDB1D51D3BB0099F563 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7EB6FDB91D51D3BB0099F563 /* Example */;
+			target = 7EB6FDB91D51D3BB0099F563 /* SliderExample */;
 			targetProxy = 7EB6FDDA1D51D3BB0099F563 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -326,8 +338,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -372,8 +386,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -392,6 +408,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -401,10 +418,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B876WVK3K2;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crystaltravel.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystaltravel.crystaltravel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -412,10 +431,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B876WVK3K2;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crystaltravel.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crystaltravel.crystaltravel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -427,7 +448,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crystaltravel.ExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SliderExample.app/SliderExample";
 			};
 			name = Debug;
 		};
@@ -439,7 +461,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crystaltravel.ExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SliderExample.app/SliderExample";
 			};
 			name = Release;
 		};
@@ -450,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crystaltravel.ExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Example;
 			};
 			name = Debug;
@@ -461,6 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crystaltravel.ExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Example;
 			};
 			name = Release;
@@ -468,7 +493,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7EB6FDB51D51D3BB0099F563 /* Build configuration list for PBXProject "Example" */ = {
+		7EB6FDB51D51D3BB0099F563 /* Build configuration list for PBXProject "SliderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EB6FDE01D51D3BB0099F563 /* Debug */,
@@ -477,29 +502,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EB6FDE21D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "Example" */ = {
+		7EB6FDE21D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "SliderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EB6FDE31D51D3BB0099F563 /* Debug */,
 				7EB6FDE41D51D3BB0099F563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		7EB6FDE51D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
+		7EB6FDE51D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "SliderExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EB6FDE61D51D3BB0099F563 /* Debug */,
 				7EB6FDE71D51D3BB0099F563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		7EB6FDE81D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "ExampleUITests" */ = {
+		7EB6FDE81D51D3BB0099F563 /* Build configuration list for PBXNativeTarget "SliderExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EB6FDE91D51D3BB0099F563 /* Debug */,
 				7EB6FDEA1D51D3BB0099F563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
